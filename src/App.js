@@ -1,16 +1,15 @@
-import React,{useState} from 'react';
+import React from 'react';
 import './App.css';
 
-import Counter from './Counter';
-import Button from './components/button/button'
+import Clicker from "./components/clicker/Clicker";
+import Fetch from "./components/fetch/Fetch";
 
 function App() {
-  return (
-    <div className="App">
-      <Button label="Click me"/>
-      {/* <Counter/> */}
-    </div>
-  );
+    return (
+        <div className="App">
+            <Fetch url={"https://jsonplaceholder.typicode.com/posts"}/>
+        </div>
+    );
 }
 
 export default App;
